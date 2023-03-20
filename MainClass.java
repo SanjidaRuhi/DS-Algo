@@ -1,68 +1,17 @@
-
-package com.dsa;
-
-import java.util.LinkedList;
-//import java.util.Stack;
+package linklist;
 
 public class MainClass {
 
-    public MainClass() {
-    }
-    
-    
-    public static void main(String[] args){
-        
-            Customer c1= new Customer("Ruhi ","01345667764","faridpur");
-            Customer c2= new Customer("Tonmoy ","01347864","Pabna");
-            Customer c3= new Customer("Shorna ","01307063222","Faridpur");
+	public static void main(String[] args) {
 
-  LinkedList<Customer> L1= new LinkedList<>();
-   L1.add(c3);
-  L1.add(c2);
-  L1.add(c1);
-  
-System.out.println(L1.isEmpty());
+		Linklist l1= new Linklist();
+		
+		l1.addNode(20);
+		l1.addNode(30);
+		l1.addNode(40);
+		l1.addNode(50);
+		l1.print();
+		
+	}
 
-for(int i=0;i<L1.size();i++){
-   System.out.println(L1.get(i).getName()+" "+L1.get(i).getContactNumber()+" "+L1.get(i).getAddress());
-   
-    
-  }
-
-//while(L1.isEmpty() != true ){
-//      System.out.println(L1.peek().getName()+" "+L1.peek().getContactNumber()+" "+L1.peek().getAddress());
-//     L1.remove();
-//    
-//  }    
-    
-              System.out.println(L1.isEmpty());
-            
-            
-            
-            
-            
-            
-//            
-//           Stack<Customer>s1=new Stack<>();
-//                System.out.println(s1.isEmpty());
-//
-//      s1.push(c1);
-//      s1.push(c2);
-//      s1.push(c3);
-//      
-//        System.out.println(s1.isEmpty());
-//
-//  while(s1.isEmpty() != true ){
-//      System.out.println(s1.peek().getName()+" "+s1.peek().getContactNumber()+" "+s1.peek().getAddress());
-//      s1.pop();
-//      
-//  }    
-//      
-//              System.out.println(s1.isEmpty());
-//
-//      
-//    }
-//    
-    
-}
 }
